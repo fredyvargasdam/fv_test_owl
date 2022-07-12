@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="payment_term_id" position="after">
+                <div class="o_partner_order_summary" colspan="2"/>
+            </field>
+            <field name="partner_id" position="after">
+                <field name="calls_realized"/>
+                <div class="o_custom_fv_buttom" colspan="2"/>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+     <t t-name="fv_test_owl.CallsRealizedButton" owl="1">
+        <div class="center"
+            style="width: 100%; text-align: center; border: 1px solid #cecece; padding: 2rem 20%; margin: 12px 0;">
+            EVERYTHING IT'S OK
+        </div>
+        <div class="center"
+            style="width: 100%; text-align: center; border: 1px solid #cecece; padding: 2rem 20%; margin: 12px 0;" t-on-click="increment">
+                PLEASE PRESS ME
+                <t t-esc="calls_realized.value"/>
+                 <!-- <t t-esc="state.value"/> -->
+        </div>
+     </t>
+ </templates>
